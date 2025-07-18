@@ -24,6 +24,10 @@ app.post("/api/messages", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 5000, () =>
-  console.log(`Servern körs på port ${process.env.PORT || 5000}`)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () =>
+  console.log(`Servern körs på port ${PORT}`)
+);
+
 );
